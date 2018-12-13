@@ -1,0 +1,84 @@
+.weather .weather-tmp h2 {
+    margin: 0;
+}
+.weather.no-class {
+    overflow: hidden;
+    position: relative;
+}
+.weather.no-class > .card-body {
+    background: #fff;
+    height: 100%;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.weather.no-class img {
+    max-height: 100%;
+}
+
+.weather.no-class > .card-body:last-child {
+    opacity: 0;
+    animation: 10s infinite slide 5s;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.weather.large .card-body {
+    padding: 0;
+}
+.weather.large img {
+    width: 74px;
+}
+.weather.large .weather-date,
+.weather.no-class .weather-date {
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+.weather.large .display-4,
+.weather.tall .display-4,
+.weather.no-class .display-4 {
+    font-size: 2rem;
+}
+.weather.large .weather-previsions,
+.weather.no-class .weather-previsions {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+}
+.weather.tall .weather-previsions div:last-child {
+    display: none;
+}
+.weather.large .weather-right,
+.weather.no-class .weather-right {
+    flex-wrap: wrap;
+}
+.weather.large .weather-right,
+.weather.no-class .weather-right {
+    flex-direction: row!important;
+}
+.weather.tall img {
+    height: 75px;
+}
+.weather.tall .weather-tmp {
+    flex-direction: row!important;
+}
+.weather.tall .weather-tmp h2 {
+    font-size: 1rem;
+    line-height: inherit;
+    margin: 0 0 0 5px;
+    padding: 0!important;
+}

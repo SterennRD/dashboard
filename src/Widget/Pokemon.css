@@ -1,0 +1,6 @@
+.no-class {
+    flex-direction: row;
+}
+.no-class .card-subtitle {
+    display: none;
+}

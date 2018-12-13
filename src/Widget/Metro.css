@@ -1,0 +1,77 @@
+.metro {
+    background: red;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    width: 30px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.small {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.small .card-header {
+    font-size: 0.8em;
+    padding: 0.8em;
+    width: 100%;
+}
+.small .card-body {
+    padding: .3rem;
+}
+.small .card-body div {
+    line-height: 10px;
+}
+.small .metro {
+    font-size: 10px;
+    height: 15px;
+    line-height: 14px;
+    width: 15px;
+}
+.small .card-footer,
+.large .card-footer {
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+    border-top: 0;
+    flex: 1;
+    font-size: 0.7rem;
+    padding: .3rem;
+}
+
+.tall .card-header {
+    font-size: 0.9em;
+}
+
+.large {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.large .card-header {
+    font-size: 0.8em;
+    padding: 0.5em;
+    width: 100%;
+}
+.large .card-body,
+.large .card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+.no-class .card-header {
+    display: none;
+}
+.no-class .card-footer {
+    font-size: 0.7rem;
+    padding: .3rem;
+}
