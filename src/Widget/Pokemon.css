@@ -1,6 +1,12 @@
 .no-class {
     flex-direction: row;
 }
+.no-class .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
 .no-class .card-subtitle {
     display: none;
 }
